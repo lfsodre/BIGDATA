@@ -1,6 +1,6 @@
 import pandas as pd
 
-# Criando um DataFrame
+# DATA FRAME EXEMPLO
 data = {'Nome': ['Alice', 'Bob', 'Charlie'],
         'Idade': [25, 30, 22]}
 df = pd.DataFrame(data)
