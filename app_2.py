@@ -5,5 +5,5 @@ data = {'Nome': ['Alice', 'Bob', 'Charlie'],
         'Idade': [25, 30, 22]}
 df = pd.DataFrame(data)
 
-# Imprimindo o DataFrame
+# IMPRIMA O RESULTADO
 print(df)
