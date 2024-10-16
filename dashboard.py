@@ -4,9 +4,9 @@ import plotly.express as px     # BIBLIOTECA PARA GRÁFICOS
 
 st.set_page_config(layout="wide")
 
-df = pd.read_csv("supermarket_sales.csv",sep=";", decimal=",")              # SEPARAR DADOS POR ';' E DECIMAL POR ','
-df["Date"] = pd.to_datetime(df["Date"])                                     # TRANSFORMA OS DADOS DA COLUNA EM DATA
-df=df.sort_values("Date")                                                   # ORDENAR OS DADOS POR DATA
+df = pd.read_csv("supermarket_sales.csv",sep=";", decimal=",")      # SEPARAR DADOS POR ';' E DECIMAL POR ','
+df["Date"] = pd.to_datetime(df["Date"])                             # TRANSFORMA OS DADOS DA COLUNA EM DATA
+df=df.sort_values("Date")                                           # ORDENAR OS DADOS POR DATA
 
 df["Month"] = df["Date"].apply(lambda x: str(x.year) + "-" + str(x.month))  #LÓGICA PARA SELECIONAR O MÊS E O ANO
 month = st.sidebar.selectbox("Mês", df["Month"].unique())
