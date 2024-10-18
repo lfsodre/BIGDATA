@@ -17,7 +17,7 @@ col1, col2 = st.columns(2)              # SEPARA EM COLUNAS
 col3, col4, col5 = st.columns(3)
 
 # CORES PERSONALIZADAS
-custom_colors = ["#FF204E", "#A0153E", "#5D0E41", "#AB63FA", "#FFA15A", "#19D3F3", "#FF6692"]
+custom_colors = ["#FF204E", "#A0153E", "#5D0E41", "#AB63FA", "#FFA15A", "#19D3F3"]
 
 # GRÁFICO FATURAMENTO POR DIA
 fig_date = px.bar(df_filtered,
